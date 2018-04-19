@@ -35,4 +35,22 @@ $(document).ready(function() {
           document.querySelector('.planete').appendChild(list);
           });
       });
+
+      $('#c').on('click', function() {
+        $.get("https://swapi.co/api/starships/", function(starship) {
+          if($('.ul-style').length > 0 ) {
+            $('.ul-style').remove();
+        };
+          let starshipList = starship.results;
+          let list = document.createElement('ul');
+          list.classList.add('ul-style');
+          for (let i = 0; i < starshipList.length; i++) {
+            let listElement = document.createElement('li');
+            listElement.innerHTML = starshipList[i].name;
+            listElement.dataset.url = starshipList[i].url;
+            list.appendChild(listElement);
+          };
+          document.querySelector('.vaisseau').appendChild(list);
+          });
+      });
 })
