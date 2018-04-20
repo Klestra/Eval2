@@ -4,7 +4,7 @@
 
 ### J'ai travaillé sur l'API StarWars : https://swapi.co/ et je me suis aidé de sa documentation : https://swapi.co/documentation
 
-### Caractéristique de l'API
+## Caractéristique de l'API
 
 - Afficher les personnages de StarWars
 - Afficher les planètes de StarWars
@@ -16,8 +16,8 @@
 
 #### Pour cela j'ai encore fais des fonctions qui permettent en cliquant sur les 'li' afficher précédement, d'aller chercher des informations supplémentaire lié aux catégories précédement stocké grâce aux url de l'API et ainsi afficher par exemple le poid d'un personnage, la taille d'un vaisseau ou encore le climat d'une planète.
 
-### Difficultés rencontré
+## Difficultés rencontré
 
 - Pour remove certaines informations après un clique
 
-#### Pour l'instant j'ai bien réussi à enlever les informations afficher par les diverses 'li' suivant là ou on reclique. Cependant je rencontre une difficulté pour enlevé les informations lié aux personnages/planètes/vaisseaux qui s'affiche un petit temps après le clique sur les boutons de personnages/planètes/vaisseaux avant de disparaitre correctement.
+#### J'ai bien réussi à enlever les informations afficher par les diverses 'li' suivant là ou on reclique. Cependant je rencontre une difficulté pour enlevé les informations lié aux personnages/planètes/vaisseaux qui s'affiche un petit temps après le clique sur les boutons de personnages/planètes/vaisseaux avant de disparaitre correctement. J'ai bien compris d'où venait le problème, des fonction remove. J'ai essayé de changer pas mal de chose, notamment de changer la valeur du remove pour essayer d'enlever les divs, les ul ou les li. Rien n'a marché et j'ai encore ce petit temps de délais ou l'information reste après le clique sur les boutons personnages/planètes/vaisseaux. 
