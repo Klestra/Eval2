@@ -99,6 +99,31 @@ $(document).ready(function() {
             list.appendChild(listElement);
           };
           document.querySelector('.vaisseau').appendChild(list);
+          $('li').on('click', function() {
+            $.get(this.dataset.url, function(starship) {
+              if($('.ul-style').length > 0 ) {
+                $('.ul-style').remove();
+              }; 
+              list.classList.add('ul-style');
+              let detail = document.createElement('ul');
+              let detailElement1 = document.createElement('li');
+              let detailElement2 = document.createElement('li');
+              let detailElement3 = document.createElement('li');
+              let detailElement4 = document.createElement('li');
+              let detailElement5 = document.createElement('li');
+              detailElement1.innerHTML = "Modele : " + starship.model;
+              detailElement2.innerHTML = "Classe : " + starship.starship_class;
+              detailElement3.innerHTML = "Cout en credit republicain : " + starship.cost_in_credits;
+              detailElement4.innerHTML = "taille : " + starship.length;
+              detailElement5.innerHTML = "Nombre de passagers : " + starship.passengers;
+              detail.appendChild(detailElement1);
+              detail.appendChild(detailElement2);
+              detail.appendChild(detailElement3);
+              detail.appendChild(detailElement4);
+              detail.appendChild(detailElement5);
+              document.querySelector('.vaisseau').appendChild(detail);
+             });
+          });  
        });
     });
 })
