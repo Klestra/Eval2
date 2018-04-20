@@ -4,6 +4,8 @@
 
 ### J'ai travaillé sur l'API StarWars : https://swapi.co/ et je me suis aidé de sa documentation : https://swapi.co/documentation
 
+#
+
 ## Caractéristique de l'API
 
 - Afficher les personnages de StarWars
@@ -15,6 +17,8 @@
 - Pour chaque clique sur un(e) personnage/planète/vaisseau, afficher ses caractéristiques
 
 #### Pour cela j'ai encore fais des fonctions qui permettent en cliquant sur les 'li' afficher précédement, d'aller chercher des informations supplémentaire lié aux catégories précédement stocké grâce aux url de l'API et ainsi afficher par exemple le poid d'un personnage, la taille d'un vaisseau ou encore le climat d'une planète.
+
+#
 
 ## Difficultés rencontré
 
