@@ -18,6 +18,6 @@
 
 ### Difficultés rencontré
 
-- A venir
-- A venir
-- A venir
+- Pour remove certaines informations après un clique
+
+#### Pour l'instant j'ai bien réussi à enlever les informations afficher par les diverses 'li' suivant là ou on reclique. Cependant je rencontre une difficulté pour enlevé les informations lié aux personnages/planètes/vaisseaux qui s'affiche un petit temps après le clique sur les boutons de personnages/planètes/vaisseaux avant de disparaitre correctement.
