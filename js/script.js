@@ -5,6 +5,9 @@ $(document).ready(function() {
         if($('.ul-style').length > 0 ) {
           $('.ul-style').remove();
         };
+        if($('.info>ul').length > 0) {
+          $('.info>ul').remove();
+        };
         let persoList = perso.results;
         let list = document.createElement('ul');
         list.classList.add('ul-style');
@@ -17,8 +20,8 @@ $(document).ready(function() {
         document.querySelector('.perso').appendChild(list);
         $('li').on('click', function() {
           $.get(this.dataset.url, function(perso) {
-            if($('.ul-style').length > 0 ) {
-              $('.ul-style').remove();
+            if($('.info>ul').length > 0 ) {
+              $('.info>ul').remove();
             }; 
             list.classList.add('ul-style');
             let detail = document.createElement('ul');
@@ -46,6 +49,9 @@ $(document).ready(function() {
         $.get("https://swapi.co/api/planets/", function(planet) {
           if($('.ul-style').length > 0 ) {
             $('.ul-style').remove();
+          };
+          if($('.info>ul').length > 0) {
+            $('.info>ul').remove();
           };
           let planetList = planet.results;
           let list = document.createElement('ul');
@@ -88,6 +94,9 @@ $(document).ready(function() {
         $.get("https://swapi.co/api/starships/", function(starship) {
           if($('.ul-style').length > 0 ) {
             $('.ul-style').remove();
+          };
+          if($('.info>ul').length > 0) {
+            $('.info>ul').remove();
           };
           let starshipList = starship.results;
           let list = document.createElement('ul');
